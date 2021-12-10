@@ -4,10 +4,18 @@
 		<meta charset="utf-8">
 		<title>Curriculo Vitae</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 		
 	</head>
 	<body onLoad="slide1()">
 		<a id="aId"><img id="id"></a>
+
+        <h1>JS SDK</h1>   
+        <input id="username" type="text" placeholder="Username"/>
+        <input id="email" type="email" placeholder="Email"/>
+        <input id="password" type="password" placeholder="Password" />
+        <button id="createButton">Create User</button>
+
         <section>
             <h1>Curriculo Vitae</h1>
             
@@ -17,7 +25,7 @@
             </ul>
         </section>
         <section>
-            <div class="secao">
+            <div class="secao" id = "1">
                 <h2>Dados Pessoais</h2>			
                     <div id="hcard-Everson" class="vcard">
                     <img src="img/imag.jpg"  alt="photo of Everson" class="photo"/>
@@ -92,6 +100,11 @@
                     </ul>
             </div>
     	<script src="javascript/app.js"></script>
-	</section>	
+	</section>
+    <script>
+        // Initialize Parse
+          Parse.initialize("fxQb9SGCxdn6JqOyXgh9BTO5OQ6JGv5Kf1qMogvT", "ZEC5Fbi9VtiSUvruqfehUIxhL20UASN67OKw5EUv"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+          Parse.serverURL = "https://parseapi.back4app.com/";
+        </script>
 	</body>
 </html>
